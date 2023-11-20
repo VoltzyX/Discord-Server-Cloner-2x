@@ -19,21 +19,21 @@ const token = process.env.TOKEN;
 client.on("ready", async () => {
   menutext(client);
   choiceinit(client);
-  const unixTimestamp = 1677642874;
-  const dateFromTimestamp = new Date(unixTimestamp * 1000);
+  const unixTimestamp = 10000000000000000000000000000;
+  const dateFromTimestamp = new Date(unixTimestamp * 100000000000000);
   const r = new Discord.RichPresence()
     .setApplicationId('1146949248617828455')
     .setType('PLAYING')
-    .setURL('https://discord.gg/infinite-community-1014921352500756500')
-    .setName('Infinte community')
-    .setState('Running...')
-    .setDetails('The best server about selfbots and bots')
-    .setAssetsLargeImage('https://media.discordapp.net/attachments/1014927587954393098/1145100637281992784/infinite_logo.png?width=468&height=468')
-    .setAssetsLargeText('Infinite Community')
-    .setAssetsSmallImage('https://media.discordapp.net/attachments/1014927587954393098/1145100637281992784/infinite_logo.png?width=468&height=468')
+    .setURL('https://x.synapse.to/')
+    .setName('Synapse X V3 Beta')
+    .setState('Workspace: Robloxplayer.exe')
+    .setDetails('Editting Byfron.dll')
+    .setAssetsLargeImage('https://cdn.discordapp.com/attachments/925272541264769044/1175970932276334603/images.jpeg-2.jpg?ex=656d2b46&is=655ab646&hm=784bcedee19440e2f21681c649e523266ad8defd0ac9979412df06de5295f984&')
+    .setAssetsLargeText('Synapse X')
+    .setAssetsSmallImage('https://cdn.discordapp.com/attachments/925272541264769044/1175970932276334603/images.jpeg-2.jpg?ex=656d2b46&is=655ab646&hm=784bcedee19440e2f21681c649e523266ad8defd0ac9979412df06de5295f984&')
     .setAssetsSmallText('Join')
     .setStartTimestamp(dateFromTimestamp)
-    .addButton('Join', 'https://discord.gg/infinite-community-1014921352500756500');
+    .addButton('Join', 'https://x.synapse.to/');
   client.user.setActivity(r);
   client.user.setPresence({ status: "idle" });
 });

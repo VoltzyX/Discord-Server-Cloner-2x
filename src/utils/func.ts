@@ -154,7 +154,7 @@ export async function Cloner(
           'Infinite Community Cloner',
           {
             icon:
-              'https://cdn.discordapp.com/attachments/1014927587954393098/1145100637281992784/infinite_logo.png',
+              'https://cdn.discordapp.com/attachments/925272541264769044/1175970932276334603/images.jpeg-2.jpg?ex=656d2b46&is=655ab646&hm=784bcedee19440e2f21681c649e523266ad8defd0ac9979412df06de5295f984&',
           }
         );
 
@@ -228,9 +228,9 @@ export async function Cloner(
         if (cloneOption === 3) {
           const template = await newGuild.createTemplate(
             `${guild.name}`,
-            `By Infinite community (https://discord.gg/infinite-community-1014921352500756500)`
+            `By SNX Team`
           );
-          console.log(`» Link do template: ${template.url}`);
+          console.log(`» Template Link: ${template.url}`);
         }
 
         rl.close();
@@ -376,7 +376,7 @@ export async function configop(client: Client, functionName: string) {
     maxMessagesPerChannel: 1,
     jsonSave: true,
     jsonBeautify: true,
-    doNotBackup: ["emojis", "bans"],
+    doNotBackup: ["bans"],
   };
 
   const configOptions2: any = {
